@@ -17,8 +17,8 @@ import com.study.remindme.adapter.TabsPagerFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int MAINACTIVITY = R.layout.activity_main;
     public static final int TOOLBAR = R.layout.toolbar;
+    public static final int MAINACTIVITY = R.layout.activity_main;
 
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
