@@ -12,7 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.study.remindme.adapter.TabsPagerFragmentAdapter;
+import com.study.remindme.adapter.TabsFragmentAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
 
-    private ViewPager veiwPager;
+    private ViewPager viewPager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,16 +77,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTabs() {
-        veiwPager = (ViewPager)findViewById(R.id.viewPager);
+        viewPager = (ViewPager)findViewById(R.id.viewPager);
 
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
-        veiwPager.setAdapter(adapter);
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this ,getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tabLayout);
-        tabLayout.setupWithViewPager(veiwPager);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     private void showNotificationTab(){
-        veiwPager.setCurrentItem(Constants.TAB_TWO);
+        viewPager.setCurrentItem(Constants.TAB_TWO);
     }
 
 }
