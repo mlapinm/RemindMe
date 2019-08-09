@@ -52,6 +52,14 @@ public class HistoryFragment extends AbstractTabFragment {
         data.add(new RemindDTO("Item 2"));
         data.add(new RemindDTO("Item 3"));
         data.add(new RemindDTO("Item 4"));
+        data.add(new RemindDTO("Item 1"));
+        data.add(new RemindDTO("Item 2"));
+        data.add(new RemindDTO("Item 3"));
+        data.add(new RemindDTO("Item 4"));
+        data.add(new RemindDTO("Item 1"));
+        data.add(new RemindDTO("Item 2"));
+        data.add(new RemindDTO("Item 3"));
+        data.add(new RemindDTO("Item 4"));
         return  data;
     }
 }
